@@ -1,6 +1,6 @@
 - name: Install MySQL for production ready server
   user: ubuntu
-  hosts: local
+  hosts: all
   become: True
   become_user: root
   vars:
