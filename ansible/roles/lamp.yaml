@@ -1,5 +1,5 @@
 - name: install LAMP Stack
-  hosts: all
+  hosts: local
   remote_user: ubuntu
   become: true
   become_user: root
