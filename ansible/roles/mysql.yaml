@@ -4,7 +4,7 @@
   become: True
   become_user: root
   vars:
-    MySQL_root_pass: ReplaceWithYourPassword
+    MySQL_root_pass: 'WhDnwVV51QOiOVu'
   tasks:
     - name: Set MySQL root password before installing
       debconf: name="mysql-server" question="mysql-server/root_password" value="" vtype="password"
@@ -45,5 +45,5 @@
         login_user: root
         login_password: ""
         name: wpuser
-        password: wpuser_password_replace_with_your_own
+        password: 'WhDnwVV51QOiOVu'
         priv: 'wordpress.*:ALL'
